@@ -1,26 +1,77 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <title>El húerfano de los Zhao</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="test image" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="body portada bg-white">
+    <header id="header" class="header portada__header absolute z-20">
+      <nav class="">
+          <div class="" id=>
+            <ul class="">
+              <li class="">
+                <a class="" href="./portada">Portada</a>
+              </li>
+              <li class="">
+                <a class="" href="./historia.html">Historia</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+    <main class="main h-screen flex justify-center">
+      <div class="grid__cover w-90 h-full grid">
+        <img src="./assets/images/logo_red.png"  data-aos="fade-down" alt="" class="d-inline-block align-text-top imagen__logo logo grid__cover--item1">
+        <p class="text-turn--left justify-end items-center grid__cover--item2 font-sans text-title text-red flex justify-end" >El Huérfano de los</p>
+        <p class= "text-serif grid__cover--item4  z-10 text-9x1 md:text-8x1 lg:text-11x1  text-white flex justify-center" >Zhao</p>
+        <div class= "grid__cover--item3 bg-red">
+            <img  src="./assets/images/letras_chinas_l.png" alt="Letras chinas">
+        </div>
+         
+        <div class= "portada__premisa grid__cover--item5  border-l-3 lg:border-l-6 border-solid  border-white lg:border-red flex items-center text-justify mx-3 lg:mx-0 pl-3 text-white lg:text-black">
+          <p class= "portada__texto"> 
+            Una historia legendaria que nos remite a un mundo antiguo 
+            de venganzas y traiciones entre clanes. Un ejemplo de la 
+            literatura china universal.
+          </p>
+        </div>
+        <div class="portada__teatro grid__cover--item6 w-100 flex justify-center lg:block">
+            <img src="./assets/images/logo tetro.png" alt="Logo del teatro Olimpia" class="imagen__teatrolimpia  w-30 lg:w-100">
+        </div>
+      </div>
+    </main>
+    <footer class="footer portada__footer bg-red text-white mt-footerXL md:footerS sm:footerS flex justify-center ">
+
+      <div class="grid__footer pt-8 w-90 grid">
+        <div class="footer__imagen self-end">
+          <img  src="./assets/images/logo_white.png" class="footer__logo w-100">
+        </div>
+        <div class="footer__info pb-3 justify-self-center w-40 lg:w-60">
+          <div class="footer__menu  md:flex-col md:items-center">
+            <ul class="p-0 list-none flex justify-around">
+              <li><a href="./index.html">Portada</a> </li>
+              <li><a href="./historia.html">Historia</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__rrss flex justify-center text-white">
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/youtube_icon.png"></a>
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/face_icon.png"></a>
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/insta_icon.png"></a>       
+          </div>
+        </div>
+        
+      </div>
+    </footer>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

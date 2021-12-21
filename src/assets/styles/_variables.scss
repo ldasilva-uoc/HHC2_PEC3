@@ -1,12 +1,31 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-sans-serif: "Secular One", sans-serif;
+$font-family-serif: "Merienda One", cursive;
+$font-family-base: "Segoe UI";
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$primary-color: #e73433;
+$secondary-color: #f4f4f4;
 
-$mqMinWidth: 420px;
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+);
+
+$MaxWidthLG: 991px;
+$MaxWidthMD: 768px;
+$MaxWidthSM: 576px;
+
+$navbar-light-hover-color: $primary-color;
+$navbar-light-active-color: $primary-color;
+$navbar-light-toggler-border-color: none;
+$navbar-padding-y: 4.5px;
+$navbar-padding-x: 4px;
+
+$card-bg: none;
+$card-border-width: 0px;
+
+@mixin Hcenter() {
+  display: flex;
+  justify-content: center;
+}
