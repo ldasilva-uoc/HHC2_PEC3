@@ -14,15 +14,15 @@
     <title>Historia</title>
   </head>
   <body class="body historia bg-white">
-    <header id="header" class="header portada__header absolute z-20">
-      <nav class="">
+    <header id="header" class="header portada__header absolute z-20 w-100 flex justify-center">
+      <nav class="w-100">
           <div class="" id=>
-            <ul class="">
+            <ul class="flex gap-x-4 justify-end mr-5 mt-5 sm:mt-2">
               <li class="">
                 <a class="" href="./portada">Portada</a>
               </li>
               <li class="">
-                <a class="" href="./historia.html">Historia</a>
+                <a class="text-red"  href="./historia.html">Historia</a>
               </li>
             </ul>
           </div>
@@ -31,10 +31,10 @@
 
     <main class="main historia__main  flex justify-center">
 
-      <div class="grid__main w-90  grid">
+      <div class="grid__main w-90  grid  grid-cols-contentXL grid-rows-contentXL ">
         <img src="./assets/images/logo_red.png" alt=""  data-aos="fade-down" class="d-inline-block align-text-top imagen__logo logo grid__main--item1">
         <p class="text-turn--left justify-end items-center historia__titulo grid__main--item2 text-primary    font-sans text-title text-red flex justify-end" >Historia</p>
-        <div class="inner grid__historia grid grid__main--item3  w-100 lg:w-75 justify-self-center ">
+        <div class="inner grid__historia grid grid-cols-historiaS lg:grid-cols-historiaXL grid__main--item3  w-100 lg:w-75 justify-self-center ">
             <h4 class="text-uppercase fw-bold grid__historia--item1 pb-5 justify-self-center font-sans">UNA TRAGEDIA ÉPICA , PERO MUY HUMANA</h4>
             <div class="historia__sipnopsis grid__historia--item2  border-b-10 border-t-10 border-solid border-red flex justify-center py-4">
                 Basada en una obra clásica china, cuenta la historia de un huérfano que vengará la muerte de su familia. 
@@ -108,25 +108,24 @@
     </main>
 
 
-    <footer class="footer historia__footer">
+    <footer class="footer portada__footer bg-red text-white mt-footerXL md:footerS sm:footerS flex justify-center ">
 
-      <div class="grid__footer">
-        <div class="footer__imagen">
-          <img src="./assets/images/logo_white.png" class="footer__logo">
+      <div class="grid__footer pt-8 w-90 grid  grid-cols-footer">
+        <div class="footer__imagen self-end">
+          <img  src="./assets/images/logo_white.png" class="footer__logo w-100">
         </div>
-        <div class="footer__info">
-          <div class="footer__menu">
-            <ul>
-              <li ><a href="./index.html">Portada</a> </li>
+        <div class="footer__info pb-3 justify-self-center w-60 lg:w-40">
+          <div class="footer__menu  md:flex-col md:items-center">
+            <ul class="p-0 list-none flex justify-around">
+              <li><a href="./index.html">Portada</a> </li>
               <li><a href="./historia.html">Historia</a></li>
             </ul>
           </div>
 
-          <div class="footer__rrss">
-            <a><img src="./assets/images/youtube_icon.png"></a>
-            <a><img src="./assets/images/face_icon.png"></a>
-            <a><img src="./assets/images/insta_icon.png"></a>
-            
+          <div class="footer__rrss flex justify-center text-white">
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/youtube_icon.png"></a>
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/face_icon.png"></a>
+            <a class="w-10 m-2 no-underline"><img class="w-100" src="./assets/images/insta_icon.png"></a>       
           </div>
         </div>
         

@@ -33,7 +33,8 @@ module.exports = {
       'footerXL': '15%',
       'footerS': '40%',
       '2':'2%',
-      '3':'3%'
+      '3':'3%',
+      '5':'5%'
      },
     screens: {
       sm: '576px',
@@ -48,17 +49,17 @@ module.exports = {
       'coverM': '40px 2% 50% 2% 32% 10%',
       'coverS': '40px 2% 1fr',
 
-      'footerXL': '40px 1fr',
+      'historiaXL': '45% 55%',
+      'historiaS': '100%',
+
+      'footer': '40px 1fr',
     },
     gridTemplateRows: {
-      'contentXL': '50px 10px 1fr',
-      'contentM': '50px 50px 10px 1f',
-
+      'contentXL': '50px 50px 10px 1f',
+ 
       'coverXL': '50px 10px 28% 28% 23% 1fr',
       'coverM': '40px 50px 10px 31% 20% 20% 10%',
       'coverS': '8% 8% 2% 35% 8% 18% 1% 20%',
-
-      'footerXL': '40px 1fr',
     },
     fontFamily: {
       sans: ['Secular One', 'sans-serif'],

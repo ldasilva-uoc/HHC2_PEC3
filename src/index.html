@@ -13,12 +13,12 @@
     <title>El húerfano de los Zhao</title>
   </head>
   <body class="body portada bg-white">
-    <header id="header" class="header portada__header absolute z-20">
-      <nav class="">
+    <header id="header" class="header portada__header absolute z-20 w-100 flex justify-center">
+      <nav class="w-100">
           <div class="" id=>
-            <ul class="">
+            <ul class="flex gap-x-4 justify-end mr-5 mt-5 sm:mt-2">
               <li class="">
-                <a class="" href="./portada">Portada</a>
+                <a class="text-red" href="./portada">Portada</a>
               </li>
               <li class="">
                 <a class="" href="./historia.html">Historia</a>
@@ -29,7 +29,7 @@
     </header>
 
     <main class="main h-screen flex justify-center">
-      <div class="grid__cover w-90 h-full grid">
+      <div class="grid__cover w-90 h-full grid  grid-cols-coverS grid-rows-coverS  sm:grid-cols-coverM sm:grid-rows-coverM lg:grid-cols-coverXL lg:grid-rows-coverXL">
         <img src="./assets/images/logo_red.png"  data-aos="fade-down" alt="" class="d-inline-block align-text-top imagen__logo logo grid__cover--item1">
         <p class="text-turn--left justify-end items-center grid__cover--item2 font-sans text-title text-red flex justify-end" >El Huérfano de los</p>
         <p class= "text-serif grid__cover--item4  z-10 text-9x1 md:text-8x1 lg:text-11x1  text-white flex justify-center" >Zhao</p>
@@ -37,7 +37,7 @@
             <img  src="./assets/images/letras_chinas_l.png" alt="Letras chinas">
         </div>
          
-        <div class= "portada__premisa grid__cover--item5  border-l-3 lg:border-l-6 border-solid  border-white lg:border-red flex items-center text-justify mx-3 lg:mx-0 pl-3 text-white lg:text-black">
+        <div class= "portada__premisa grid__cover--item5  border-l-3 lg:border-l-6 border-solid  border-white sm:border-red flex items-center text-justify mx-3 lg:mx-0 pl-3 text-white sm:text-black">
           <p class= "portada__texto"> 
             Una historia legendaria que nos remite a un mundo antiguo 
             de venganzas y traiciones entre clanes. Un ejemplo de la 
@@ -45,17 +45,17 @@
           </p>
         </div>
         <div class="portada__teatro grid__cover--item6 w-100 flex justify-center lg:block">
-            <img src="./assets/images/logo tetro.png" alt="Logo del teatro Olimpia" class="imagen__teatrolimpia  w-30 lg:w-100">
+            <img src="./assets/images/logo tetro.png" alt="Logo del teatro Olimpia" class="imagen__teatrolimpia  w-30 sm:w-100">
         </div>
       </div>
     </main>
     <footer class="footer portada__footer bg-red text-white mt-footerXL md:footerS sm:footerS flex justify-center ">
 
-      <div class="grid__footer pt-8 w-90 grid">
+      <div class="grid__footer pt-8 w-90 grid  grid-cols-footer">
         <div class="footer__imagen self-end">
           <img  src="./assets/images/logo_white.png" class="footer__logo w-100">
         </div>
-        <div class="footer__info pb-3 justify-self-center w-40 lg:w-60">
+        <div class="footer__info pb-3 justify-self-center w-60 lg:w-40">
           <div class="footer__menu  md:flex-col md:items-center">
             <ul class="p-0 list-none flex justify-around">
               <li><a href="./index.html">Portada</a> </li>

@@ -17,11 +17,6 @@ p {
   font-family: $font-family-serif;
 }
 
-.grid__cover {
-  grid-template-columns: 40px 2% 40% 2% 42% 10%;
-  grid-template-rows: 50px 10px 28% 28% 23% 1fr;
-}
-
 .grid__cover--item1 {
   grid-area: 1 / 1 / 1 / 1;
 }
@@ -46,11 +41,6 @@ p {
   grid-area: 6/ 6 / 6 /6;
 }
 
-.grid__main {
-  grid-template-columns: 40px 10px 1fr;
-  grid-template-rows: 50px 10px 1fr;
-}
-
 .grid__main--item1 {
   grid-area: 1 / 1 / 1 / 1;
 }
@@ -61,10 +51,6 @@ p {
 
 .grid__main--item3 {
   grid-area: 3 / 3 / 4 / 4;
-}
-
-.grid__historia {
-  grid-template-columns: 45% 55%;
 }
 
 .grid__historia--item1 {
@@ -125,10 +111,6 @@ p {
   #FOOTER
 \*------------------------------------*/
 
-.grid__footer {
-  grid-template-columns: 40px 1fr;
-}
-
 .footer__menu {
   ul {
     a:hover {
@@ -139,11 +121,6 @@ p {
 }
 
 @media (max-width: $MaxWidthLG) {
-  .grid__cover {
-    grid-template-columns: 40px 2% 50% 2% 32% 10%;
-    grid-template-rows: 40px 50px 10px 31% 20% 20% 10%;
-  }
-
   .grid__cover--item1 {
     grid-area: 2 / 1 / 2 / 1;
   }
@@ -187,16 +164,6 @@ p {
   /*------------------------------------*\
   #HISTORIA
 \*------------------------------------*/
-
-  .grid__historia {
-    grid-template-columns: 100%;
-  }
-
-  .historia__tecnica {
-    padding-left: 0%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-  }
 
   .grid__historia--item1 {
     grid-area: 1 / 1 / 1 / 2;
@@ -251,14 +218,6 @@ p {
       font-size: 3rem;
     }
   }
-
-  /*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-  .footer__info {
-    width: 60%;
-  }
 }
 
 @media (max-width: $MaxWidthMD) {
@@ -287,30 +246,23 @@ p {
     z-index: 3;
   }
 
-  @supports (display: grid) {
-    .grid__cover {
-      grid-template-columns: 40px 2% 1fr;
-      grid-template-rows: 8% 8% 2% 35% 8% 18% 1% 20%;
-    }
+  .grid__cover--item1 {
+    grid-area: 2 / 1 /2 / 1;
+  }
 
-    .grid__cover--item1 {
-      grid-area: 2 / 1 /2 / 1;
-    }
-
-    .grid__cover--item2 {
-      grid-area: 4 / 4 / 9 / 1;
-    }
-    .grid__cover--item3 {
-      grid-area: 2 / 4 /9 /4;
-    }
-    .grid__cover--item4 {
-      grid-area: 8 / 4 / 9 / 4;
-    }
-    .grid__cover--item5 {
-      grid-area: 6 / 4 / 6 / 4;
-    }
-    .grid__cover--item6 {
-      grid-area: 5/ 4 / 5/ 4;
-    }
+  .grid__cover--item2 {
+    grid-area: 4 / 4 / 9 / 1;
+  }
+  .grid__cover--item3 {
+    grid-area: 2 / 4 /9 /4;
+  }
+  .grid__cover--item4 {
+    grid-area: 8 / 4 / 9 / 4;
+  }
+  .grid__cover--item5 {
+    grid-area: 6 / 4 / 6 / 4;
+  }
+  .grid__cover--item6 {
+    grid-area: 5/ 4 / 5/ 4;
   }
 }
