@@ -4,6 +4,14 @@
   font-family: $font-family-base;
 }
 
+.inline__spacebetween {
+  @apply flex justify-between py-4;
+}
+
+.center__horizontal {
+  @apply flex justify-center;
+}
+
 p {
   margin: 0 !important;
 }
